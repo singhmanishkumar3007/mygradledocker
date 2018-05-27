@@ -118,7 +118,13 @@ kubectl logs --since=1h nginx
 18. Stop minikube using minikube stop
 
 
-18. 
+19. Cleaning up Service and Deployment
+Afterward, we can remove Service and Deployment:
+
+1
+2
+$> kubectl delete service "service-name"
+$> kubectl delete deployment "deployment-name"
 
 
  
