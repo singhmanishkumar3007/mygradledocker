@@ -19,6 +19,7 @@ apply plugin: 'io.spring.dependency-management'
 apply plugin: 'jacoco'
 apply plugin: 'maven'
 
+
 group    = "com.cloudcompilerr"
 version  = "0.0.1-SNAPSHOT"
 sourceCompatibility = 1.8
@@ -43,6 +44,7 @@ repositories {
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
+	compile('org.projectlombok:lombok', { changing =true })
 	testCompile(
 	'org.springframework.boot:spring-boot-starter-test',
 	'org.hamcrest:hamcrest-all:1.3'
